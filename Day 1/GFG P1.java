@@ -131,7 +131,7 @@ class Node
 class Solution
 {
     //Function to return the level order traversal of a tree.
-    static ArrayList <Integer> levelOrder(Node root) 
+    ArrayList <Integer> levelOrder(Node root) 
     {
         // Your code here
         ArrayList<Integer> levelOrderList = new ArrayList<>();
