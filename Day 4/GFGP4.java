@@ -18,7 +18,7 @@ import java.io.*;
     }
     }
 		
-public class GFG2
+public class GFGP4
 {
     static Node buildTree(String str){
         
