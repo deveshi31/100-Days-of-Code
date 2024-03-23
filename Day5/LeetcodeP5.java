@@ -1,7 +1,10 @@
+package Day5;
 // Leetcode 234. Palindrome Linked List
 
 import java.util.ArrayList;
 import java.util.List;
+
+import ListNode;
 
 class Solution {
   public boolean isPalindrome(ListNode head) {
