@@ -2,7 +2,6 @@
 
 //{ Driver Code Starts
 import java.io.*;
-import java.util.*;
 
 class Main {
     // Driver code

@@ -19,7 +19,6 @@ public class Solution {
         for (int i = 0; i < a; i++) {
             prevA = prevA.next;
         }
-        ListNode nodeA = prevA.next;
         ListNode nodeB = prevA;
         for (int i = a; i <= b; i++) {
             nodeB = nodeB.next;

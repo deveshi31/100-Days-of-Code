@@ -20,7 +20,7 @@ class Tree {
     public static ArrayList <Integer> diagonalSum(Node root) 
     {
         // code here.
-         Queue<Node> q = new LinkedList();
+         Queue<Node> q = new LinkedList<>();
         ArrayList<Integer> ans = new ArrayList<>();
         q.add(root);
         while(!q.isEmpty())
