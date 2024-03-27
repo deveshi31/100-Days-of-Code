@@ -126,7 +126,7 @@ class Node{
 }
 */
 class Tree {
-    public static ArrayList <Integer> diagonalSum(Node root) 
+    public ArrayList <Integer> diagonalSum(Node root) 
     {
         // code here.
         ArrayList<Integer> list = new ArrayList<>();
