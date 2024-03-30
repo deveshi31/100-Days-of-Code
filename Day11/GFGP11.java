@@ -10,6 +10,7 @@ import java.io.*;
 
 class Main {
     public static void main(String[] args) throws IOException {
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
 

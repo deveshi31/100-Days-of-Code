@@ -79,7 +79,7 @@ package Day10;
   
   
   class Solution {
-      public static int findShortestPath(int[][] mat) {
+      public int findShortestPath(int[][] mat) {
               int n = mat.length;
   
           int m = mat[0].length;
