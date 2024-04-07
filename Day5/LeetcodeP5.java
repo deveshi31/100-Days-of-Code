@@ -16,11 +16,17 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
+import javax.lang.model.element.Name;
+
 class Tree {
-    public static ArrayList <Integer> diagonalSum(Node root) 
+    /**
+     * @param root
+     * @return
+     */
+    public static ArrayList <Integer> diagonalSum(java.util.jar.Attributes.Name root) 
     {
         // code here.
-         Queue<Node> q = new LinkedList<>();
+         Queue<java.util.jar.Attributes.Name> q = new LinkedList<>();
         ArrayList<Integer> ans = new ArrayList<>();
         q.add(root);
         while(!q.isEmpty())
@@ -31,7 +37,7 @@ class Tree {
             for(int i=0;i<n;i++)
             { 
                 
-         Node temp=q.poll();
+         Name temp=(Name) q.poll();
             // q.pop();
                 while(temp!=null) 
                 {
