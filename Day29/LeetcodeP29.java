@@ -1,6 +1,8 @@
-package Day28;
+package Day29;
 
 import javax.swing.tree.TreeNode;
+
+// Leetcode 129. Sum Root to Leaf Numbers
 
 /**
  * Definition for a binary tree node.
@@ -18,23 +20,26 @@ import javax.swing.tree.TreeNode;
  * }
  */
 class Solution {
-  public int sumOfLeftLeaves(TreeNode root) {
-      return sumofLeftLeaves(root,false);
+  public int sumNumbers(TreeNode root) {
+      return dfs(root, 0);
   }
+  
   /**
-   * @param root
-   * @param isLeft
+   * @param node
+   * @param pathSum
    * @return
    */
-  int sumofLeftLeaves(TreeNode root,boolean isLeft){
-      if(root==null){
+  private int dfs(TreeNode node, int pathSum) {
+      if (node == null)
           return 0;
-      }
-      if(root.left==null && root.right==null){
-          return isLeft ? root.val : 0;
-      }
-      int leftSum = sumofLeftLeaves(root.left,true);
-      int rightSum = sumofLeftLeaves(root.right,false);
-      return leftSum+rightSum;
+      
+      pathSum = pathSum * 10 + node.val;
+      
+      if (node.left == null && node.right == null)
+          return pathSum;
+      
+      return dfs(node.left, pathSum) + dfs(node.right, pathSum);
   }
 }
+
+
