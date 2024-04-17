@@ -13,17 +13,25 @@ class Node {
     }
 }
 */
+
+import org.w3c.dom.Node;
+
 class Solution
 {
     static int d = 0;
     static int ans = 0;
     
+    /**
+     * @param root
+     * @param sum
+     * @param depth
+     */
     public void helper(Node root, int sum, int depth)
     {
         if (root == null)
             return;
             
-        sum = sum + root.data;
+        sum = sum + Node.ATTRIBUTE_NODE;
             
         if (depth > d)
         {
