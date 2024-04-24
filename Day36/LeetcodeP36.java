@@ -1,10 +1,36 @@
 package Day36;
 
-// Leetcode 752. Open the Lock
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Set;
 
-import java.util.*;
+// // Leetcode 752. Open the Lock
+
 
 class Solution {
+    /**
+     * Definition for a pair of values.
+     */
+    class Pair<K, V> {
+        private K key;
+        private V value;
+
+        public Pair(K key, V value) {
+            this.key = key;
+            this.value = value;
+        }
+
+        public K getKey() {
+            return key;
+        }
+
+        public V getValue() {
+            return value;
+        }
+    }
+
     /**
      * @param deadends
      * @param target

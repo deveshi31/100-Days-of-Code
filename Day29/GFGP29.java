@@ -39,7 +39,6 @@ class Array {
 		    {
 		        query[i]=Integer.parseInt(br.readLine());
 		    }
-		    Solution ob=new Solution();
 		    int ans[]=Solution.countElements(a,b,n,query,q);
 		    for(int i=0;i<q;i++)
 		    System.out.println(ans[i]);

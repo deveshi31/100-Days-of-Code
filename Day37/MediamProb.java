@@ -6,7 +6,7 @@ package Day37;
 //{ Driver Code Starts
   import java.io.*;
   
-    public class Main {
+    public class MediamProb {
   
       public static void main(String[] args) throws Exception {
           BufferedReader br =

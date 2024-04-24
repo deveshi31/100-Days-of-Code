@@ -1,5 +1,9 @@
 package Day5;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
 /*Complete the function below
 Node is as follows:
 class Node{
@@ -12,21 +16,15 @@ class Node{
 }
 */
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-
-import javax.lang.model.element.Name;
-
 class Tree {
     /**
      * @param root
      * @return
      */
-    public static ArrayList <Integer> diagonalSum(java.util.jar.Attributes.Name root) 
+    public static ArrayList <Integer> diagonalSum(Node root) 
     {
         // code here.
-         Queue<java.util.jar.Attributes.Name> q = new LinkedList<>();
+         Queue<Node> q = new LinkedList<>();
         ArrayList<Integer> ans = new ArrayList<>();
         q.add(root);
         while(!q.isEmpty())
@@ -37,7 +35,7 @@ class Tree {
             for(int i=0;i<n;i++)
             { 
                 
-         Name temp=(Name) q.poll();
+         Node temp=q.poll();
             // q.pop();
                 while(temp!=null) 
                 {
