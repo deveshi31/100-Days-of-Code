@@ -5,30 +5,54 @@ import java.util.Stack;
 
 // Leetcode 2487. Remove Nodes from Linked List
 
-class Solution {
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ * @param <ListNode>
+ */
+class Solution<ListNode> {
   /**
    * @param head
    * @return
    */
-  public List removeNodes(List head) {
-      List cur = head;
-      Stack<List> stack = new Stack<>();
-      
-      while (cur != null) {
-          while (!stack.isEmpty() && stack.peek().val < cur.val) {
-              stack.pop();
+  public ListNode removeNodes(ListNode head) {
+      if(head.next == null){
+          return head;
+      }
+      ListNode prevNode = head;
+      ListNode currentNode = head.next;
+
+      while(currentNode != null){
+          ListNode nextNode = currentNode.next;
+          currentNode.next = prevNode;
+          prevNode = currentNode;
+          currentNode = nextNode;
+      }
+      head.next = null;
+      head = prevNode;
+
+      prevNode = head;
+      currentNode = head.next;
+      while(currentNode != null){
+          if(currentNode.val < prevNode.val){
+              currentNode = currentNode.next;
           }
-          stack.push(cur);
-          cur = cur.next;
+          else{
+              ListNode nextNode = currentNode.next;
+              currentNode.next = prevNode;
+              prevNode = currentNode;
+              currentNode = nextNode;
+          }
+          
       }
-      
-      List nxt = null;
-      while (!stack.isEmpty()) {
-          cur = stack.pop();
-          cur.next = nxt;
-          nxt = cur;
-      }
-      
-      return cur;
+      head.next = null;
+      head = prevNode;
+      return head;
   }
 }
