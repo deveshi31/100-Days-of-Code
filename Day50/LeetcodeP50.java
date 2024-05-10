@@ -1,58 +1,66 @@
 package Day50;
 
-import java.util.List;
-import java.util.Stack;
-
 // Leetcode 2487. Remove Nodes from Linked List
+
+
 
 /**
  * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- * @param <ListNode>
  */
-class Solution<ListNode> {
-  /**
-   * @param head
-   * @return
-   */
-  public ListNode removeNodes(ListNode head) {
-      if(head.next == null){
-          return head;
-      }
-      ListNode prevNode = head;
-      ListNode currentNode = head.next;
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode() {}
+    ListNode(int val) { this.val = val; }
+    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+}
 
-      while(currentNode != null){
-          ListNode nextNode = currentNode.next;
-          currentNode.next = prevNode;
-          prevNode = currentNode;
-          currentNode = nextNode;
-      }
-      head.next = null;
-      head = prevNode;
+class Solution {
+    /**
+     * @param head
+     * @return
+     */
+    public ListNode removeNodes(ListNode head) {
+        // Check if the list has only one node or is empty
+        if (head == null || head.next == null) {
+            return head;
+        }
 
-      prevNode = head;
-      currentNode = head.next;
-      while(currentNode != null){
-          if(currentNode.val < prevNode.val){
-              currentNode = currentNode.next;
-          }
-          else{
-              ListNode nextNode = currentNode.next;
-              currentNode.next = prevNode;
-              prevNode = currentNode;
-              currentNode = nextNode;
-          }
-          
-      }
-      head.next = null;
-      head = prevNode;
-      return head;
-  }
+        // Reverse the linked list
+        ListNode prevNode = null;
+        ListNode currentNode = head;
+        while (currentNode != null) {
+            ListNode nextNode = currentNode.next; // Store the next node
+            currentNode.next = prevNode; // Reverse the link
+            prevNode = currentNode; // Move prevNode and currentNode pointers
+            currentNode = nextNode;
+        }
+        head = prevNode; // Update the head to point to the new head of the reversed list
+
+        // Remove nodes with values smaller than the next node's value
+        prevNode = head;
+        currentNode = head.next;
+        while (currentNode != null) {
+            if (currentNode.val < currentNode.next.val) { // Check the value of the current node
+                prevNode.next = currentNode.next; // Remove the current node
+                currentNode = currentNode.next; // Move to the next node
+            } else {
+                prevNode = currentNode; // Move prevNode
+                currentNode = currentNode.next; // Move to the next node
+            }
+        }
+
+        // Reverse the modified list to restore the original order
+        prevNode = null;
+        currentNode = head;
+        while (currentNode != null) {
+            ListNode nextNode = currentNode.next; // Store the next node
+            currentNode.next = prevNode; // Reverse the link
+            prevNode = currentNode; // Move prevNode and currentNode pointers
+            currentNode = nextNode;
+        }
+        head = prevNode; // Update the head to point to the new head of the reversed list
+
+        return head;
+    }
 }

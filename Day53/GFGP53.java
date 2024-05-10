@@ -14,7 +14,7 @@ class GFG {
           int T = sc.nextInt();
           while (T-- > 0) {
               int n = sc.nextInt();
-              String ans = Solution.divisorGame(n) ? "True" : "False";
+              String ans = LeetcodeP53.divisorGame(n) ? "True" : "False";
               System.out.println(ans);
           }
         }

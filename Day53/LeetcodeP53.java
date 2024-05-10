@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 // Leetcode 3075. Maximize Happiness of Selected Children
 
-public class Solution {
+public class LeetcodeP53 {
   public long maximumHappinessSum(int[] happiness, int k) {
       Arrays.sort(happiness);
       long res = 0;
@@ -16,5 +16,10 @@ public class Solution {
       }
 
       return res;
+  }
+
+  public static boolean divisorGame(int n) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'divisorGame'");
   }
 }
