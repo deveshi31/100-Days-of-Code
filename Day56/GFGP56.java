@@ -14,7 +14,6 @@ class GFG {
         while (t-- > 0) {
             int d = Integer.parseInt(in.readLine());
 
-            Solution ob = new Solution();
             System.out.println(Solution.minSteps(d));
         }
     }
