@@ -3,13 +3,13 @@ package Day62;
 // Leetcode 979. Distribute Coins in Binary Tree
 
 // Definition for a binary tree node.
-public class TreeNode {
+public class LeetcodeP62 {
   int val;
-  TreeNode left;
-  TreeNode right;
-  TreeNode() {}
-  TreeNode(int val) { this.val = val; }
-  TreeNode(int val, TreeNode left, TreeNode right) {
+  LeetcodeP62 left;
+  LeetcodeP62 right;
+  LeetcodeP62() {}
+  LeetcodeP62(int val) { this.val = val; }
+  LeetcodeP62(int val, LeetcodeP62 left, LeetcodeP62 right) {
       this.val = val;
       this.left = left;
       this.right = right;
@@ -19,13 +19,13 @@ public class TreeNode {
 class Solution {
   public int ans;
 
-  public int distributeCoins(TreeNode root) {
+  public int distributeCoins(LeetcodeP62 root) {
       ans = 0;
       countSteps(root);
       return ans;
   }
 
-  public int countSteps(TreeNode root) {
+  public int countSteps(LeetcodeP62 root) {
       if (root == null) return 0;
       int leftCoins = countSteps(root.left);
       int rightCoins = countSteps(root.right);
