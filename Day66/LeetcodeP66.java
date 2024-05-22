@@ -5,7 +5,7 @@ import java.util.List;
 
 // Leetcode 131. Palindrome Partitioning
 
-public class Solution {
+public class LeetcodeP66 {
   public List<List<String>> partition(String s) {
       List<List<String>> result = new ArrayList<>();
       backtrack(s, 0, new ArrayList<>(), result);

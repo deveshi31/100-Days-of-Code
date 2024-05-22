@@ -21,7 +21,7 @@ class GFG {
                 a[i] = sc.nextInt();
             }
             int k = sc.nextInt();
-            Solution obj = new Solution();
+            LeetcodeP66 obj = new LeetcodeP66();
             double ans = obj.findSmallestMaxDist(a, k);
             System.out.printf("%.2f", ans);
             System.out.println();
