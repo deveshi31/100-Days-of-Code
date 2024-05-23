@@ -40,4 +40,9 @@ public class LeetcodeP66 {
       }
       return true;
   }
+
+  public double findSmallestMaxDist(int[] a, int k) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'findSmallestMaxDist'");
+  }
 }

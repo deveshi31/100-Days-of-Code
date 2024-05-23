@@ -6,25 +6,24 @@ package Day66;
 // Initial Template for Java
 
 import java.io.*;
-import java.lang.*;
-import java.math.*;
 import java.util.*;
 
 class GFG {
     public static void main(String[] args) throws IOException {
-        Scanner sc = new Scanner(System.in);
-        int T = sc.nextInt();
-        while (T-- > 0) {
-            int n = sc.nextInt();
-            int a[] = new int[n];
-            for (int i = 0; i < n; i++) {
-                a[i] = sc.nextInt();
-            }
-            int k = sc.nextInt();
-            LeetcodeP66 obj = new LeetcodeP66();
-            double ans = obj.findSmallestMaxDist(a, k);
-            System.out.printf("%.2f", ans);
-            System.out.println();
+        try (Scanner sc = new Scanner(System.in)) {
+          int T = sc.nextInt();
+          while (T-- > 0) {
+              int n = sc.nextInt();
+              int a[] = new int[n];
+              for (int i = 0; i < n; i++) {
+                  a[i] = sc.nextInt();
+              }
+              int k = sc.nextInt();
+              LeetcodeP66 obj = new LeetcodeP66();
+              double ans = obj.findSmallestMaxDist(a, k);
+              System.out.printf("%.2f", ans);
+              System.out.println();
+          }
         }
     }
 }
