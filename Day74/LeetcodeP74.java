@@ -2,7 +2,7 @@ package Day74;
 
 // Leetcode 1442. Count Triplets That Can Form Two Arrays of Equal XOR
 
-class Solution {
+class LeetcodeP74 {
   public int countTriplets(int[] arr) {
       int count = 0;
       int n = arr.length;

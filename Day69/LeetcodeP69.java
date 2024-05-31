@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 
 
-class Solution {
+class LeetcodeP69 {
     public List<String> wordBreak(String s, List<String> wordDict) {
       HashSet<String> hs = new HashSet<>(wordDict);
       return wordBreakHelper(s, 0, hs);

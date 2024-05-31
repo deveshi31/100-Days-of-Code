@@ -1,7 +1,7 @@
 package Day16;
 
 // Leetcode 205. Isomorphic Strings
-class Solution {
+class LeetcodeP16 {
   public boolean isIsomorphic(String s, String t) {
       // Create arrays to store the frequency of characters in both strings
       int[] freqS = new int[200]; // Stores frequency of characters in string s

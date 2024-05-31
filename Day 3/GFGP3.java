@@ -10,7 +10,7 @@
     }
 } */
 
-class Solution {
+class GFGP3 {
     static int d = 0;
     static int ans = 0;
 

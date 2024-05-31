@@ -2,7 +2,7 @@ package Day15;
 
 // Leetcode 58. Length of Last Word
 
-class Solution {
+class LeetcodeP15 {
   public int lengthOfLastWord(String s) {
       s = s.trim();
       

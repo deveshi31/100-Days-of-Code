@@ -2,7 +2,7 @@ package Day32;
 
 // Leetcode 463. Island Perimeter
 
-class Solution {
+class LeetcodeP32 {
   public int islandPerimeter(int[][] grid) {
       int perimeter = 0;
       int rows = grid.length;

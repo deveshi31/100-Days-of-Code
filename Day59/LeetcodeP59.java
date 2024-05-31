@@ -8,7 +8,7 @@ import java.util.Queue;
 
 // Leetcode 2812. Find the Safest Path in a Grid
 
-class Solution {
+class LeetcodeP59 {
   private int[] roww = {0, 0, -1, 1};
   private int[] coll = {-1, 1, 0, 0};
   private void bfs(List<List<Integer>> grid, int[][] score, int n) {

@@ -2,7 +2,7 @@ package Day33;
 
 // Leetcode 200. Number of Islands
 
-class Solution {
+class LeetcodeP33 {
   public int numIslands(char[][] grid) {
       if (grid == null || grid.length == 0) {
           return 0;

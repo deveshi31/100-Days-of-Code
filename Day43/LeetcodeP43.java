@@ -2,7 +2,7 @@ package Day43;
 
 // Leetcode 2997. Minimum Number of Operations to Make Array XOR Equal to K
 
-class Solution {
+class LeetcodeP43 {
   public int minOperations(int[] nums, int k) {
       int finalXor = 0;
       // XOR of all integers in the array.

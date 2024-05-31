@@ -9,7 +9,7 @@ class ListNode {
     }
 }
 
-public class Solution {
+public class LeetcodeP3 {
     public ListNode mergeLists(ListNode list1, int a, int b, ListNode list2) {
         ListNode dummy = new ListNode(0);
         dummy.next = list1;
@@ -62,7 +62,7 @@ public class Solution {
         int a = 3;
         int b = 4;
 
-        ListNode result = solution.mergeLists(list1, a, b, list2);
+        ListNode result = LeetcodeP2.mergeLists(list1, a, b, list2);
 
         // Print the result
         while (result != null) {
@@ -89,7 +89,7 @@ public class Solution {
         int x = 2;
         int y = 5;
 
-        ListNode result2 = solution.mergeLists(list3, x, y, list4);
+        ListNode result2 = LeetcodeP2.mergeLists(list3, x, y, list4);
 
         // Print the result
         while (result2 != null) {

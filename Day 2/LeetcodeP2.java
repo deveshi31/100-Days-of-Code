@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-class Solution {
+class LeetcodeP2 {
   public int leastInterval(char[] tasks, int n) {
       int[] freq = new int[26];
       for (char task : tasks) {
@@ -17,5 +17,10 @@ class Solution {
       }
 
       return idle < 0 ? tasks.length : tasks.length + idle;
+  }
+
+  public static ListNode mergeLists(ListNode list1, int a, int b, ListNode list2) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'mergeLists'");
   }
 }

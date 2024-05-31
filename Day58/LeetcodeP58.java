@@ -2,7 +2,7 @@ package Day58;
 
 // Leetcode 1219. Path with Maximum Gold
 
-class Solution {
+class LeetcodeP58 {
   int[] roww = {1, -1, 0, 0};
   int[] coll = {0, 0, -1, 1};
   int maxGold = 0;

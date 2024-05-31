@@ -9,7 +9,7 @@ import java.util.Set;
 // // Leetcode 752. Open the Lock
 
 
-class Solution {
+class LeetcodeP36 {
     /**
      * Definition for a pair of values.
      */

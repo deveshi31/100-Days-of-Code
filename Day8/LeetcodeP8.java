@@ -5,7 +5,7 @@ package Day8;
 import java.util.ArrayList;
 import java.util.List;
 
-class Solution {
+class LeetcodeP8 {
   public List<Integer> findDuplicates(int[] nums) {
       List<Integer> ans = new ArrayList<>();
       int n = nums.length;

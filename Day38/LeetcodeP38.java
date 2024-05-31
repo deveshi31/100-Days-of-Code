@@ -5,7 +5,7 @@ import java.util.Map;
 
 // Leetcode 1137. N-th Tribonacci Number
 
-class Solution {
+class LeetcodeP38 {
   public int tribonacci(int n) {
       Map<Integer, Integer> memo = new HashMap<>();
       return helper(n, memo);

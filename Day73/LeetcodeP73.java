@@ -2,7 +2,7 @@ package Day73;
 
 // Leetcode 1404. Number of Steps to Reduce a Number in Binary Representation to One
 
-class Solution {
+class LeetcodeP73 {
   public int numSteps(String s) {
       int l = s.length() - 1;
       int carry = 0;

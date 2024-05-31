@@ -2,7 +2,7 @@ package Day68;
 
 // Leetcode 1255. Maximum Score Words Formed by Letters
 
-public class Solution {
+public class Leetcode {
   public int maxScoreWords(String[] words, char[] letters, int[] score) {
       int[] count = new int[26];
       int[] lettersCount = new int[26];

@@ -1,7 +1,7 @@
 package Day18;
 
 // Leetcode 1614. Maximum Nesting Depth of the Parentheses
-class Solution {
+class S {
   public int maxDepth(String s) {
     int count = 0;
     int maxNum = 0;

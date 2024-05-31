@@ -2,7 +2,7 @@ package Day63;
 
 // Leetcode 3068. Find the Maximum Sum of Node Values
 
-class Solution {
+class LeetcodeP63 {
   public long maximumValueSum(int[] nums, int k, int[][] edges) {
       long total = 0;
       for (int num : nums) {

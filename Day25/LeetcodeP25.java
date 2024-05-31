@@ -5,7 +5,7 @@ package Day25;
 import java.util.Stack;
  
 
-class Solution {
+class LeetcodeP25 {
   public String removeKdigits(String num, int k) {
       Stack<Character> stack = new Stack<>();
       

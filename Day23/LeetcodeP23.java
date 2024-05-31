@@ -2,7 +2,7 @@ package Day23;
 
 // Leetcode 2073. Time Needed to Buy Tickets
 
-class Solution {
+class LeetcodeP23 {
   public int timeRequiredToBuy(int[] tickets, int k) {
       int total = 0;
 

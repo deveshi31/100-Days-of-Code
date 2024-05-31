@@ -10,7 +10,7 @@ import java.util.Queue;
 
 // Leetcode 310. Minimum Height Trees
 
-class Solution {
+class LeetcodeP37 {
   @SuppressWarnings({ "rawtypes", "unchecked" })
   public List<Integer> findMinHeightTrees(int n, int[][] edges) {
       if(n == 1) return Collections.singletonList(0);

@@ -2,7 +2,7 @@ package Day27;
 
 // Leetcode 85. Maximal Rectangle
 
-class Solution {
+class LeetcodeP27 {
   public int maximalRectangle(char[][] matrix) {
       if (matrix == null || matrix.length == 0 || matrix[0].length == 0)
           return 0;

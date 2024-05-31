@@ -2,7 +2,7 @@ package Day70;
 
 //Leetcode 552. Student Attendance Record II
 
-class Solution {
+class LeetcodeP70 {
   private static final int MOD = 1000000007;
 
   private int check_all_records(int cur_ind, int count_a, int count_l, int n, int[][][] temp) {

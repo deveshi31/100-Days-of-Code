@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 // Leetcode 2597. The Number of Beautiful Subsets
 
-class Solution {
+class LeetcodeP67 {
   public int dfs(int[] nums, int idx, int k, HashMap<Integer, Integer> mp) {
       if (idx == nums.length) return 1;
 

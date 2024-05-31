@@ -8,7 +8,7 @@ import java.util.PriorityQueue;
 
 // Leetcode 857. Minimum Cost to Hire K Workers
 
-class Solution {
+class LeetcodeP55 {
   public double mincostToHireWorkers(int[] quality, int[] wage, int k) {
       PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
       List<Pair<Double, Integer>> ratio = new ArrayList<>();

@@ -8,7 +8,7 @@
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }*/
 
-class Solution {
+class LeetcodeP4 {
   public ListNode reverseList(ListNode head) {
       ListNode prev = null;
       ListNode curr = head;

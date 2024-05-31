@@ -2,7 +2,7 @@ package Day14;
 
 // Leetcode 2444. Count Subarrays With Fixed Bounds
 
-class Solution {
+class LeetcodeP14 {
   public long countSubarrays(int[] nums, int minK, int maxK) {
       long res = 0;
       int badIdx = -1, leftIdx = -1, rightIdx = -1;

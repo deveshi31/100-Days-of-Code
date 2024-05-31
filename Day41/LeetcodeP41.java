@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-class Solution {
+class LeetcodeP41 {
   public int findRotateSteps(String ring, String key) {
         char[] r=ring.toCharArray();
       @SuppressWarnings("unchecked")

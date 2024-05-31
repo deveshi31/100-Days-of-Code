@@ -4,7 +4,7 @@ package Day11;
 
 import java.util.HashMap;
 
-class Solution {
+class LeetcodeP11 {
   public int maxSubarrayLength(int[] nums, int k) {
       int ans = 0;
       HashMap<Integer, Integer> mp = new HashMap<>();

@@ -2,7 +2,7 @@ package Day57;
 
 // Leetcode 861. Score After Flipping Matrix
 
-class Solution {
+class LeetcodeP57 {
   public int matrixScore(int[][] grid) {
       int n = grid.length, m = grid[0].length;
       int res = (1 << (m - 1)) * n;  

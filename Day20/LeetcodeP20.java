@@ -2,7 +2,7 @@ package Day20;
 
 // Leetcode 1249. Minimum Remove to Make Valid Parentheses
 
-class Solution {
+class LeetcodeP20 {
   public String minRemoveToMakeValid(String s) {
       String result;
 

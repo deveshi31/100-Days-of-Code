@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 //992. Subarrays with K Different Integers
 
-class Solution {
+class LeetcodeP13 {
   public int subarraysWithKDistinct(int[] nums, int k) {
       int subWithMaxK = subarrayWithAtMostK(nums, k);
       int reducedSubWithMaxK = subarrayWithAtMostK(nums, k - 1);

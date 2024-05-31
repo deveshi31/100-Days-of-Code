@@ -2,7 +2,7 @@ package Day72;
 
 // Leetcode 1208. Get Equal Substrings Within Budget
 
-class Solution {
+class LeetcodeP72 {
   public int equalSubstring(String s, String t, int maxCost) {
       int n = s.length();
       int start = 0;

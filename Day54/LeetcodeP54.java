@@ -2,7 +2,7 @@ package Day54;
 
 // Leetcode 786. K-th Smallest Prime Fraction
 
-class Solution {
+class LeetcodeP54 {
   public int[] kthSmallestPrimeFraction(int[] arr, int k) {
       int n = arr.length;
       double left = 0, right = 1, mid;

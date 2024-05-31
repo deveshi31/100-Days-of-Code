@@ -2,7 +2,7 @@ package Day44;
 
 // Leetcode 1915. Number of Wonderful Substrings
 
-class Solution {
+class LeetcodeP44 {
   public long wonderfulSubstrings(String word) {
       long[] count = new long[1024]; // 2^10 to store XOR values
       long result = 0;

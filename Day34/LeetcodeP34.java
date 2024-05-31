@@ -8,7 +8,7 @@ import java.util.Stack;
 
 // Leetcode 1992. Find All Groups of Farmland
 
-class Solution {
+class LeetcodeP34 {
   public int[][] findFarmland(int[][] land) {
       int rows = land.length;
       int cols = land[0].length;

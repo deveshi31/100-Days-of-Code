@@ -8,7 +8,7 @@ import java.util.Map;
 
 // Leetcode 834. Sum of Distances in Tree
 
-class Solution {
+class LeetcodeP42 {
   private Map<Integer, List<Integer>> graph;
   private int[] count;
   private int[] res;

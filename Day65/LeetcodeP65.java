@@ -5,7 +5,7 @@ import java.util.List;
 
 // Leetcode 78. Subsets
 
-class Solution {
+class LeetcodeP65 {
   public List<List<Integer>> subsets(int[] nums) {
       List<List<Integer>> result = new ArrayList<>();
       backtrack(nums, 0, new ArrayList<>(), result);

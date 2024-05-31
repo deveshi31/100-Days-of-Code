@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 // Leetcode 1289. Minimum Falling Path Sum II
 
-class Solution {
+class LeetcodeP40 {
   public int minFallingPathSum(int[][] grid) {
       int n = grid.length, m = grid[0].length;
       int res = Integer.MAX_VALUE;

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 // Leetcode 1608. Special Array With X Elements Greater Than or Equal X
 
-class Solution {
+class LeetcodeP71 {
   public int specialArray(int[] nums) {
       Arrays.sort(nums);
       int n = nums.length;

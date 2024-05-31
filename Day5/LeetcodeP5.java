@@ -16,7 +16,7 @@ class Node{
 }
 */
 
-class Tree {
+class LeetcodeP5 {
     /**
      * @param root
      * @return

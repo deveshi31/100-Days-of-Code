@@ -1,6 +1,6 @@
 package Day28;
 
-class Solution {
+class LeetcodeP28 {
   public int sumOfLeftLeaves(TreeNode root) {
       return sumofLeftLeaves(root,false);
   }

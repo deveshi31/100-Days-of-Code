@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 // Leetcode 506. Relative Ranks
 
-class Solution {
+class LeetcodeP52 {
   public String[] findRelativeRanks(int[] score) {
       
       int n = score.length;

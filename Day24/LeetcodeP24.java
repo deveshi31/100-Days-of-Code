@@ -5,7 +5,7 @@ package Day24;
 
 import java.util.*;
 
-class Solution {
+class LeetcodeP24 {
     public int[] deckRevealedIncreasing(int[] deck) {
         Arrays.sort(deck); // Sort the deck in increasing order
         

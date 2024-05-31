@@ -2,7 +2,7 @@ package Day39;
 
 // Leetcode 2370. Longest Ideal Subsequence
 
-class Solution {
+class LeetcodeP39 {
   public int longestIdealString(String s, int k) {
       int[] dp = new int[26];
       int ans=1;

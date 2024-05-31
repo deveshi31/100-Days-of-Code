@@ -2,7 +2,7 @@ package Day9;
 
 // Leetcode 41. First Missing Positive
 
-class Solution {
+class LeetcodeP9 {
   // Function to swap elements in the array
   private void swap(int[] arr, int i, int j) {
       int temp = arr[i];

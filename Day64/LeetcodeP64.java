@@ -2,7 +2,7 @@ package Day64;
 
 // Leetcode 1863. Sum of All Subset XOR Totals 
 
-class Solution {
+class LeetcodeP65 {
   public int subsetXORSum(int[] nums) {
       int n = nums.length;
       int totalSum = 0;

@@ -2,7 +2,7 @@ package Day56;
 
 // 2373. Largest Local Values in a Matrix
 
-class Solution {
+class LeetcodeP56 {
   public int[][] largestLocal(int[][] grid) {
       int n = grid.length;
       int[][] res = new int[n - 2][n - 2];

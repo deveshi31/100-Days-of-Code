@@ -2,7 +2,7 @@ package Day7;
 
 // Leetcode 287. Find the Duplicate Number
 
-class Solution {
+class LeetcodeP7 {
   public int findDuplicate(int[] nums) {
       int slow = nums[0];
       int fast = nums[0];

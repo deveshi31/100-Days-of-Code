@@ -2,7 +2,7 @@ package Day45;
 
 // Leetcode 2000. Reverse Prefix of Word
 
-class Solution {
+class LeetcodeP45 {
   public String reversePrefix(String word, char ch) {
       int j = word.indexOf(ch);
       if (j != -1) {

@@ -2,7 +2,7 @@ package Day10;
 
 //Leetcode 713. Subarray Product Less Than K
 
-class Solution {
+class LeetcodeP10 {
   public int numSubarrayProductLessThanK(int[] nums, int k) {
       if (k <= 1) return 0;
 
