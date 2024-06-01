@@ -2,7 +2,7 @@ package Day75;
 
 // Leetcode 260. Single Number III
 
-class Solution {
+class LeetcodeP75 {
   public int[] singleNumber(int[] nums) {
       int n = nums.length;
       int[] result = new int[2];
