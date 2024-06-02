@@ -18,7 +18,7 @@ class TreeNode {
     }
 }
 
-class Solution {
+class LeetcodeP29 {
     public int sumNumbers(TreeNode root) {
         return dfs(root, 0);
     }

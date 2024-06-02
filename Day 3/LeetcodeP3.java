@@ -44,9 +44,6 @@ public class LeetcodeP3 {
     }
 
     public static void main(String[] args) {
-        // Test cases
-        Solution solution = new Solution();
-
         // Example 1
         ListNode list1 = new ListNode(10);
         list1.next = new ListNode(1);

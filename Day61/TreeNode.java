@@ -31,7 +31,7 @@ public class TreeNode {
     }
 }
 
-class Solution {
+class LeetcodeP61 {
     public TreeNode removeLeafNodes(TreeNode root, int target) {
         if (root == null) return null;
         

@@ -4,7 +4,7 @@ import java.util.Stack;
 
 // Leetcode 1544. Make The String Great
 
-class Solution {
+class LeetcodeP19 {
   public String makeGood(String s) {
       Stack<Character> stack = new Stack<>();
       

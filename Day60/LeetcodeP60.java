@@ -35,7 +35,7 @@ class TreeNode {
   }
 }
 
-class Solution {
+class LeetcodeP60 {
   public boolean helper(TreeNode root) {
       if (root == null) {
           return false;

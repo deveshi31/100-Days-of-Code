@@ -16,7 +16,7 @@ class ListNode {
     ListNode(int x) { val = x; }
 }
 
-class Solution {
+class LeetcodeP49 {
     /**
      * @param node
      */

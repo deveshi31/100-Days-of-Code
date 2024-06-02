@@ -18,7 +18,7 @@ class TreeNode {
     }
 }
 
-public class Solution {
+public class LeetcodeP30 {
     /**
      * @param root
      * @param val

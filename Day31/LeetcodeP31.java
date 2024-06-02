@@ -18,7 +18,7 @@ class TreeNode {
   }
 }
 
-class Solution {
+class LeetcodeP31 {
   public String smallestFromLeaf(TreeNode root) {
       dfs(root, new StringBuilder());
       return ans;
