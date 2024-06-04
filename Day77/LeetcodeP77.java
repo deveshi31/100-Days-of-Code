@@ -2,7 +2,7 @@ package Day77;
 
 // Leetcode 344. Reverse String
 
-class Solution {
+class LeetcodeP77 {
   public void reverseString(char[] s) {
       int left = 0, right = s.length - 1;
       while (left < right) {
