@@ -4,7 +4,7 @@
 
 import java.util.HashSet;
 
-public class Solution {
+public class LeetcodeP79  {
   public int longestPalindrome(String s) {
       // Initialize a set to keep track of characters with odd frequencies
       HashSet<Character> charSet = new HashSet<>();

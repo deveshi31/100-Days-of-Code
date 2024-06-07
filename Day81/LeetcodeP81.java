@@ -1,8 +1,10 @@
 package Day81;
 
+import java.util.Arrays;
+
 // Leetcode 846. Hand of Straights
 
-class Solution {
+class LeetcodeP81 {
   public boolean findsucessors(int[] hand, int groupSize, int i, int n) {
       int f = hand[i] + 1;
       hand[i] = -1;

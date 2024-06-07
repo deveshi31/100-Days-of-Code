@@ -5,7 +5,7 @@ import java.util.Arrays;
 // GFG Swapping pairs make sum equal
 
 
-class Solution {
+class GFGP80 {
   boolean isPresent(long[] arr,long target){
       int l=0,h=arr.length-1;
       while(l<=h){
