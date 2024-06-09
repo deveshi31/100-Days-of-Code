@@ -4,7 +4,7 @@ import java.util.List;
 
 // Leetcode 648. Replace Words
 
-class Solution {
+class LeetcodeP82 {
   Trie root;
   public String replaceWords(List<String> dictionary, String sentence) {
       root = new Trie();

@@ -2,7 +2,7 @@
 
 // GFG Binary representation of next number
 
-class Solution {
+class GFGP79 {
   String binaryNextNumber(String s) {
       // Remove leading zeros for correct processing
       s = s.replaceFirst("^0+(?!$)", "");
