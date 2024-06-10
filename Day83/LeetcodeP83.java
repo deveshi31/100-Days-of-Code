@@ -5,7 +5,7 @@ import java.util.Map;
 
 // Leetcode 523. Continuous Subarray Sum
 
-class Solution {
+class LeetcodeP83 {
   public boolean checkSubarraySum(int[] nums, int k) {
 /* int pro = nums[0];
       int i = 0, j = 1;
