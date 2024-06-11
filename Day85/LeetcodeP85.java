@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 // Leetcode 1051. Height Checker
 
-class Solution {
+class LeetcodeP85 {
   public int heightChecker(int[] heights) {
       int[] expected = heights.clone();
       Arrays.sort(expected);

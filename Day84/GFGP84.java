@@ -24,4 +24,9 @@ class Solution {
           }
       }
   }
+
+  public int[] Series(int n) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'Series'");
+  }
 }

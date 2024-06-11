@@ -22,7 +22,7 @@ class Main {
 }
 // } Driver Code Ends
 
-class Solution {
+class GFGP6 {
 
     int[] Series(int n) {
         // code here
