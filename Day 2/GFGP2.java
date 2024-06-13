@@ -41,7 +41,7 @@ class GFGP2{
 
 //User function Template for Java
 
-class Solution { 
+class GFG { 
      int ans;
 
     // Function to find the root of the given element in the disjoint set.

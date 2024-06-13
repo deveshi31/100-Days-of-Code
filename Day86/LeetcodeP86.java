@@ -2,7 +2,7 @@ package Day86;
 
 // Leetcode 1122. Relative Sort Array
 
-class Solution {
+class LeetcodeP86 {
   public int[] relativeSortArray(int[] arr1, int[] arr2) {
       int length = 0;
       for(int i=0;i<arr1.length;i++){

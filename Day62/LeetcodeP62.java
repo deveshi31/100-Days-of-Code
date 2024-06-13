@@ -16,7 +16,7 @@ public class LeetcodeP62 {
   }
 }
 
-class Solution {
+class Leetcode {
   public int ans;
 
   public int distributeCoins(LeetcodeP62 root) {

@@ -1,6 +1,7 @@
 
 // GFG Convert array into Zig-Zag fashion
 
+import java.util.ArrayList;
 
 class Solution {
   public static void zigZag(int n, int[] arr) {
@@ -28,5 +29,10 @@ class Solution {
   public int[] Series(int n) {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'Series'");
+  }
+
+  public ArrayList<Integer> maximumWeight(int n, int[][] edges, int q, int[] queries) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'maximumWeight'");
   }
 }
