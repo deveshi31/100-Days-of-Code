@@ -2,7 +2,7 @@ package Day88;
 
 // GFG Padovan Sequence
 
-class Solution
+class GFGP88
 {
   public int padovanSequence(int n)
     {
