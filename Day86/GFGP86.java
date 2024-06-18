@@ -46,8 +46,7 @@ class GFG {
 
             int[] brr = IntArray.input(br, n);
 
-            Solution obj = new Solution();
-            long res = obj.maxTip(n, x, y, arr, brr);
+            long res = Solution.maxTip(n, x, y, arr, brr);
 
             System.out.println(res);
         }
