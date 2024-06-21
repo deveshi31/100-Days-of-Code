@@ -3,7 +3,7 @@
 
 import java.util.ArrayList;
 
-class Solution {
+class GFGP84 {
   public static void zigZag(int n, int[] arr) {
       for (int i = 0; i < n - 1; i++) {
           // If i is even, arr[i] should be less than arr[i+1]

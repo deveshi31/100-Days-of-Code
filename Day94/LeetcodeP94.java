@@ -2,7 +2,7 @@ package Day94;
 
 // Leetcode 1482. Minimum Number of Days to Make m Bouquets
 
-class Solution {
+class LeetcodeP95 {
   public int minDays(int[] bloomDay, int m, int k) {
       if ((long) m * k > bloomDay.length) {
           return -1;

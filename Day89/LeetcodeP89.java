@@ -6,7 +6,7 @@ package Day89;
 
 import java.util.Arrays;
 
-class Solution {
+class LeetcodeP89 {
   public int minIncrementForUnique(int[] nums) {
       Arrays.sort(nums);
       int ans = 0;

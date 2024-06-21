@@ -2,7 +2,7 @@ package Day92;
 
 // Leetcode 633. Sum of Square Numbers
 
-class Solution {
+class LeetcodeP92 {
   public boolean judgeSquareSum(int c) {
       for (int divisor = 2; divisor * divisor <= c; divisor++) {
           if (c % divisor == 0) {

@@ -2,7 +2,7 @@ package Day93;
 
 // Leetcode 826. Most Profit Assigning Work
 
-class Solution {
+class LeetcodeP94 {
   public int maxProfitAssignment(int[] difficulty, int[] profit, int[] worker) {
       int maxDifficulty = 0;
       for (int d : difficulty) {

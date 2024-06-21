@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.PriorityQueue;
 
-class Solution {
+class LeetcodeP90 {
   // Defining the Project class within the Solution class
   private static class Project {
       int capital;

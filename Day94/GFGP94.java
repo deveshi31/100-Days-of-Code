@@ -7,7 +7,6 @@ package Day94;
 // Initial Template for Java
 
 import java.io.*;
-import java.util.*;
 
 class GFG {
     public static void main(String args[]) throws IOException {

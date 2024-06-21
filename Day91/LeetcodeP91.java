@@ -2,7 +2,7 @@ package Day91;
 
 // Leetcode 330. Patching Array
 
-class Solution {
+class LeetcodeP91 {
   public int minPatches(int[] nums, int n) {
       long miss = 1;
       int result = 0;
