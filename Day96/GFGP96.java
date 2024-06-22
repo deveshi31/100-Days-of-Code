@@ -69,5 +69,10 @@ class Solution {
         // System.out.println(val3+" "+val4);
         return "";
     }
+
+    public int[] Series(int n) {
+      // TODO Auto-generated method stub
+      throw new UnsupportedOperationException("Unimplemented method 'Series'");
+    }
 }
 
