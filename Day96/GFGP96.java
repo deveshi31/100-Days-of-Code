@@ -7,6 +7,7 @@
 // Initial Template for Java
 
 import java.io.*;
+import java.util.ArrayList;
 
 class GFG {
     public static void main(String args[]) throws IOException {
@@ -73,6 +74,11 @@ class Solution {
     public int[] Series(int n) {
       // TODO Auto-generated method stub
       throw new UnsupportedOperationException("Unimplemented method 'Series'");
+    }
+
+    public ArrayList<Integer> maximumWeight(int n, int[][] edges, int q, int[] queries) {
+      // TODO Auto-generated method stub
+      throw new UnsupportedOperationException("Unimplemented method 'maximumWeight'");
     }
 }
 

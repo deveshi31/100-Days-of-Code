@@ -1,40 +1,49 @@
 package Day55;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.Arrays;
 import java.util.PriorityQueue;
 
 // Leetcode 857. Minimum Cost to Hire K Workers
 
-class LeetcodeP55 {
-  public double mincostToHireWorkers(int[] quality, int[] wage, int k) {
-      PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
-      List<Pair<Double, Integer>> ratio = new ArrayList<>();
-      int n = quality.length, qualitySum = 0;
-      double res = Double.MAX_VALUE, maxRate = 0.0;
+class Worker {
+    int quality;
+    int wage;
 
-      for (int i = 0; i < n; ++i) {
-          ratio.add(new Pair<>((double) wage[i] / quality[i], i));
-      }
-
-      ratio.sort(Comparator.comparingDouble(p -> p.getKey()));
-      for (int i = 0; i < k; ++i) {
-          qualitySum += quality[ratio.get(i).getValue()];
-          maxRate = Math.max(maxRate, ratio.get(i).getKey());
-          maxHeap.offer(quality[ratio.get(i).getValue()]);
-      }
-
-      res = maxRate * qualitySum;
-      for (int i = k; i <n; ++i) {
-          maxRate = Math.max(maxRate, ratio.get(i).getKey());
-          qualitySum -= maxHeap.poll();
-          qualitySum += quality[ratio.get(i).getValue()];
-          maxHeap.offer(quality[ratio.get(i).getValue()]);
-          res = Math.min(res, maxRate * qualitySum);
-      }
-
-      return res;
-  }
+    public Worker(int quality, int wage) {
+        this.quality = quality;
+        this.wage = wage;
+    }
 }
+
+class Solution {
+    public double mincostToHireWorkers(int[] quality, int[] wage, int k) {
+        int n = quality.length;
+        Worker[] workers = new Worker[n];
+
+        for (int i = 0; i < n; i++) {
+            workers[i] = new Worker(quality[i], wage[i]);
+        }
+
+        Arrays.sort(workers, (a, b) -> Double.compare((double) a.wage / a.quality, (double) b.wage / b.quality));
+
+        double minCost = Double.MAX_VALUE;
+        int workQuality = 0;
+        PriorityQueue<Integer> res = new PriorityQueue<>((a, b) -> b - a);
+
+        for (Worker worker : workers) {
+            workQuality += worker.quality;
+            res.offer(worker.quality);
+
+            if (res.size() > k) {
+                workQuality -= res.poll();
+            }
+
+            if (res.size() == k) {
+                minCost = Math.min(minCost, workQuality * ((double) worker.wage / worker.quality));
+            }
+        }
+
+        return minCost;
+    }
+}
+
